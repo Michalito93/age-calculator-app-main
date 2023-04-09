@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <label id="day" for="day"
+          >Day<input type="number" name="day" placeholder="DD" class="day" />
+          <p class="day-error">Must be a vaild day</p></label
+        >
+        <label id="month" for="month"
+          >Month<input
+            type="number"
+            name="month"
+            placeholder="MM"
+            class="month"
+          />
+          <p class="month-error">Must be a vaild month</p></label
+        >
+        <label id="year" for="year"
+          >Year<input
+            type="number"
+            name="year"
+            placeholder="YYYY"
+            class="year"
+          />
+          <p class="year-error">Must be in the past</p></label
+        >
+      </form>
+      <div class="line"><div class="btn"></div></div>
+      <section class="result">
+        <p><span class="years">--</span> years</p>
+        <p><span class="months">--</span> months</p>
+        <p><span class="days">--</span> days</p>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Michalito</a>.
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
